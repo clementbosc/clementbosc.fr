@@ -65,7 +65,7 @@ section{
 }
 
 .cover{
-    background-image: url("/img/cover.jpg");
+    background-image: url("img/cover.jpg");
     width:100%;
     height:100%;
     background-position: center center;
@@ -418,6 +418,12 @@ ul.dashed > li:before{
 .project-item.eldo{
     background-image: url('img/mockup_eldo_clementbosc.jpg');
 }
+.project-item.locanoe{
+    background-image: url('img/mockup_locanoe_clementbosc.jpg');
+}
+.project-item.ilek_autoconso{
+    background-image: url('img/mockup_ilekautoconso_clementbosc.jpg');
+}
 .project-item.ckt{
     background-image: url('img/mockup_ckt_clementbosc.jpg');
 }
@@ -460,7 +466,7 @@ a.project-link {
 .skill-section {
     width: 90%;
     margin: auto;
-    max-width: 850px;
+    max-width: 700px;
 }
 .skill-section-title {
     font-weight: 700;
@@ -474,7 +480,25 @@ a.project-link {
 }
 
 
-.skill-item {
+.skill-parent-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-parent-name{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 45px;
+}
+
+ul.skill-logo-list {
+    margin-left: 20px;
+    display: flex;
+}
+
+/*.skill-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -486,36 +510,66 @@ a.project-link {
     -ms-flex-align: center;
     align-items: center;
     margin: 0 20px;
-}
-.skill-item:first-child{
+}*/
+/*.skill-item:first-child{
     margin: 0 20px 0 0;
+}*/
+
+li.skill-item {
+    text-align: center;
+    margin: 0 8px;
 }
+
 .skill-item-img {
-    width: 80px;
-    height: 80px;
+    width: 45px;
+    height: 45px;
     background-position: center center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 10px;
+    margin: 4px;
 }
-.skill-item-img.php{ background-image: url("img/php_logo.svg"); }
-.skill-item-img.html{ background-image: url("img/html_logo.svg"); }
-.skill-item-img.css{ background-image: url("img/css_logo.svg"); }
-.skill-item-img.js{ background-image: url("img/js_logo.svg"); }
-.skill-item-img.mysql{ background-image: url("img/mysql_logo.svg"); }
-.skill-item-img.jquery{ background-image: url("img/jquery_logo.svg"); }
-.skill-item-img.java{ background-image: url("img/java_logo.svg"); }
-.skill-item-img.ocaml{ background-image: url("img/ocaml_logo.svg"); }
-.skill-item-img.mac{ background-image: url("img/mac_logo.svg"); }
-.skill-item-img.windows{ background-image: url("img/windows_logo.svg"); }
-.skill-item-img.linux{ background-image: url("img/linux_logo.svg"); }
-
-.skill-item-img.adobe{ background-image: url("img/adobe_logo.svg"); }
-.skill-item-img.eclipse{ background-image: url("img/eclipse_logo.svg"); }
-.skill-item-img.office{ background-image: url("img/office_logo.svg"); }
-.skill-item-img.phpstorm{ background-image: url("img/phpstorm_logo.svg"); }
-
 .skill-item-title {
+    font-size: 14px;
+}
+.skill-item-img.php{ background-image: url("img/pictos/php_logo.svg"); }
+.skill-item-img.html{ background-image: url("img/pictos/html_logo.svg"); }
+.skill-item-img.css{ background-image: url("img/pictos/css_logo.svg"); }
+.skill-item-img.js{ background-image: url("img/pictos/js_logo.svg"); }
+.skill-item-img.mysql{ background-image: url("img/pictos/mysql_logo.svg"); }
+.skill-item-img.jquery{ background-image: url("img/pictos/jquery_logo.svg"); }
+.skill-item-img.java{ background-image: url("img/pictos/java_logo.svg"); }
+.skill-item-img.ocaml{ background-image: url("img/pictos/ocaml_logo.svg"); }
+.skill-item-img.mac{ background-image: url("img/pictos/mac_logo.svg"); }
+.skill-item-img.windows{ background-image: url("img/pictos/windows_logo.svg"); }
+.skill-item-img.linux{ background-image: url("img/pictos/linux_logo.svg"); }
+.skill-item-img.oracle{ background-image: url("img/pictos/oracle_logo.svg"); }
+.skill-item-img.postgresql{ background-image: url("img/pictos/postgresql_logo.svg"); }
+.skill-item-img.ruby{ background-image: url("img/pictos/ruby_logo.svg"); }
+.skill-item-img.clang{ background-image: url("img/pictos/clang_logo.svg"); }
+.skill-item-img.neo4j{ background-image: url("img/pictos/neo4j_logo.svg"); }
+.skill-item-img.python{ background-image: url("img/pictos/python_logo.svg"); }
+.skill-item-img.json{ background-image: url("img/pictos/json_logo.svg"); }
+.skill-item-img.xml{ background-image: url("img/pictos/xml_logo.svg"); }
+.skill-item-img.jupyter{ background-image: url("img/pictos/jupyter_logo.svg"); }
+.skill-item-img.sklearn{ background-image: url("img/pictos/sklearn_logo.svg"); }
+.skill-item-img.keras{ background-image: url("img/pictos/keras_logo.svg"); }
+.skill-item-img.lucene{ background-image: url("img/pictos/lucene_logo.svg"); }
+.skill-item-img.lemur{ background-image: url("img/pictos/lemur_logo.svg"); }
+.skill-item-img.nosql{ background-image: url("img/pictos/nosql_logo.svg"); }
+.skill-item-img.w2v{ background-image: url("img/pictos/w2v_logo.svg"); }
+
+.skill-item-img.adobe{ background-image: url("img/pictos/adobe_logo.svg"); }
+.skill-item-img.eclipse{ background-image: url("img/pictos/eclipse_logo.svg"); }
+.skill-item-img.office{ background-image: url("img/pictos/office_logo.svg"); }
+.skill-item-img.phpstorm{ background-image: url("img/pictos/phpstorm_logo.svg"); }
+
+
+.skill-item-img.nologo{ 
+    width: 0;
+    height: 0;
+}
+
+/*.skill-item-title {
     position: relative;
 }
 .skill-item.star > .skill-item-title:before {
@@ -537,7 +591,7 @@ a.project-link {
     height: 30px;
     top: -17px;
     right: -22px;
-}
+}*/
 
 /*For smartphones*/
 @media screen and (max-width: 425px){
